@@ -108,7 +108,7 @@ function LaptopScene() {
       <div className="orbit orbit-one" />
       <div className="orbit orbit-two" />
       <div className="profile-float" aria-label="Professional portrait of Chandrasekar A">
-        <img src="/profile.jpg" alt="Chandrasekar A, Python Full-Stack Developer" />
+        <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Chandrasekar A, Python Full-Stack Developer" />
         <div className="profile-float-caption"><span className="live-dot" /> CHANDRASEKAR A <small>DEVELOPER</small></div>
       </div>
       <div className="laptop-float">
@@ -221,7 +221,7 @@ function App() {
               <p className="hero-description">I build web applications that connect thoughtful interfaces, reliable APIs, databases, and AI-powered workflows.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#work">Explore my work <ArrowDownRight size={17}/></a>
-                <a className="button button-quiet" href="/Chandrasekar_A_Python_FullStack_Resume.pdf" download><Download size={16}/> Download resume</a>
+                <a className="button button-quiet" href={`${import.meta.env.BASE_URL}Chandrasekar_A_Python_FullStack_Resume.pdf`} download><Download size={16}/> Download resume</a>
               </div>
             </Reveal>
             <Reveal delay={0.24}>
